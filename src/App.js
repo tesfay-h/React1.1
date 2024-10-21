@@ -1,15 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
 import Greet from './components/Greet'
-import welcome from './components/welcome';
+import Welcome from './components/welcome';
 import Hello from './components/hello';
+import Message from './components/message'
+import counter from './components/counter';
 
 function App() {
   return (
     <div className="App">
-      < Greet />
-      < welcome />
-      <Hello/>
+      <Message/>
+      <counter/>
+      < Greet name= 'bruce' heroName ="Batman"  />
+      <p>This is the first paragraph! </p>
+      < Greet name= 'gebru' heroName = "Superman"/>
+      <button>click here! </button>
+      < Greet name= 'hellen' heroName = "Wonder woman"/>
+      < Welcome  name= 'bruce' heroName ="Batman"/>
+      < Welcome  name= 'gebru' heroName ="superman"/>
+      < Welcome  name= 'hellen' heroName ="wondor woman"/>
+      {/*< Hello/>*/}
     
     </div>
   );
